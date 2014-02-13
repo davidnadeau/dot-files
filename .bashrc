@@ -52,3 +52,5 @@ bakwht='\[\e[47m\]'   # White
 clr='\[\e[0m\]'    # Text Reset
 
 PS1="$bp┏ ⇐ $g( $b\w$g )\n$g┗ $g⇒ $clr"
+
+alias tmux="TERM=screen-256color-bce tmux"
