@@ -24,6 +24,6 @@ map <C-d> :NERDTreeToggle<CR>
 set laststatus=2
 
 "(X)HTML,XML
-autocmd FileType html,xhtml,xml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-"CSS
-autocmd FileType css setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType html,xhtml,xml,css setlocal shiftwidth=2 tabstop=2 softtabstop=2
+"Other
+autocmd FileType c,cc,cpp,java,hs setlocal shiftwidth=4 tabstop=4 softtabstop=4
