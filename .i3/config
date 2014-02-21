@@ -162,3 +162,9 @@ bar {
         position        top
         font pango:     Cantarell 7
 }
+
+#bg image
+exec feh --bg-scale /home/soote/Pictures/1378425566637.png
+
+#flux
+exec xflux -l 43.652527 -g -79.381961
