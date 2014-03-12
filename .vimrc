@@ -5,32 +5,30 @@
 "  \ V /| | | | | | | | | (__ 
 " (_)_/ |_|_| |_| |_|_|  \___|
 
-set nocompatible
-
 call  pathogen#infect()
+
+set nocompatible
+syntax on
+
+set t_Co=256
+set term=screen-256color
+colorscheme bclear
 
 set number
 set background=dark
-syntax on
+set undolevels=1000
+set shiftwidth=4
+set softtabstop=4
+
 set nobackup
 set nowb
 set noswapfile
 
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-set autoindent
-
-set t_Co=256
-set term=screen-256color
-
-colorscheme solarized 
-
 map <C-d> :NERDTreeToggle<CR>
 
-set laststatus=2
-
-"(X)HTML,XML
+"markup
 autocmd FileType html,xhtml,xml,css setlocal shiftwidth=2 tabstop=2 softtabstop=2
-"Other
-autocmd FileType c,cc,cpp,java,hs setlocal shiftwidth=4 tabstop=4 softtabstop=4
+
+"highlight trailing whitepsace
+set list
+set listchars=tab:>.,trail:.,extends:#,nbsp:.

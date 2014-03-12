@@ -19,8 +19,15 @@ font pango:Cantarell 8
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 10
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+#border color
+set $cyan   #00afaf
+
+#                       border  background  text
+client.focused          0       $cyan       0
+
+# border size
+new_window  pixel 1
+new_float   pixel 1
 
 # start a terminal
 bindsym $mod+Return exec xfce4-terminal #i3-sensible-terminal
@@ -164,7 +171,7 @@ bar {
 }
 
 #bg image
-exec feh --bg-scale /home/soote/Pictures/1378425566637.png
+exec feh --bg-scale /home/soote/Pictures/rSKHYgD.png
 
 #flux
 exec xflux -l 43.652527 -g -79.381961

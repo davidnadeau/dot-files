@@ -56,3 +56,7 @@ bakwht='\[\e[47m\]'   # White
 clr='\[\e[0m\]'    # Text Reset
 
 PS1="$c┏ ⇐ $g( $b\w$g )\n$g┗ ⇒ $clr"
+
+export OPCODEDIR=/usr/local/lib/csound/plugins
+export CSSTRNGS=/usr/local/share/locale
+
