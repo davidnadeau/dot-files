@@ -5,21 +5,7 @@
 #  _| |_) | (_| \__ \ | | | | | (__ 
 # (_)_.__/ \__,_|___/_| |_|_|  \___|
                                   
-
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
 alias ls='ls --color=auto'
-
-# cd and ls in one
-cl() {
-    if [[ -d "$1" ]]; then
-        cd "$1"
-        ls
-    else
-        echo "bash: cl: '$1': Directory not found"
-    fi
-}
 
 k='\[\e[0;30m\]' # Black - Regular
 r='\[\e[0;31m\]' # Red
@@ -56,7 +42,3 @@ bakwht='\[\e[47m\]'   # White
 clr='\[\e[0m\]'    # Text Reset
 
 PS1="$c┏ ⇐ $g( $b\w$g )\n$g┗ ⇒ $clr"
-
-export OPCODEDIR=/usr/local/lib/csound/plugins
-export CSSTRNGS=/usr/local/share/locale
-
